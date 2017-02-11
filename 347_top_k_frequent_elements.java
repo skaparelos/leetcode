@@ -1,3 +1,7 @@
+/*
+O(n log n) time
+O(n) space
+*/
 public class Solution {
     public List<Integer> topKFrequent(int[] nums, int k) {
         
@@ -24,10 +28,6 @@ public class Solution {
                 return  b[0] - a[0];
             }
         });
-        
-        /*for(int i =0; i < freq.size(); i++){
-            System.out.println(freq.get(i)[1] + ", times-> " + freq.get(i)[0]);
-        }*/
         
         ArrayList<Integer> ret = new ArrayList<>();
         for(int i = 0; i < k; i++)
